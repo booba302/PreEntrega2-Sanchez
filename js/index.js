@@ -171,5 +171,5 @@ function calc(products, imp) {
 
     let cuota = total / cuotas
 
-    alert('El resumen de su compra es el suguiente: \n\nSubtotal: ' + subTotal + '\nIva: ' + iva.toFixed(2) + '\nTotal: ' + total + '\nNro de cuotas: ' + cuotas + '\nCuotas: ' + cuota.toFixed(2))
+    alert('El resumen de su compra es: \n' + summary(products) + '\n\nSubtotal: ' + subTotal + '\nIva: ' + iva.toFixed(2) + '\nTotal: ' + total + '\nNro de cuotas: ' + cuotas + '\nCuotas: ' + cuota.toFixed(2))
 }
