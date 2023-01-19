@@ -1,18 +1,110 @@
 * {
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 .title {
     display: flex;
-    flex-direction: row;
-    background-color: lightblue;
+    flex-direction: column;
+    background-color: darkgreen;
     align-items: center;
     justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    height: 400px;
 }
 
 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 48px;
-    padding: 15%;
+    font-size: 64px;
+    color: rgb(200, 200, 200);
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    color: rgb(200, 200, 200);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+    gap: 20px;
+    height: 100%;
+    background-color: darkgreen;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: rgb(200, 200, 200);
+}
+
+li {
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.black:hover {
+    background-color: black;
+}
+
+.green:hover {
+    background-color: green;
+}
+
+.red:hover {
+    background-color: red;
+}
+
+.white:hover {
+    background-color: white;
+}
+
+.blue:hover {
+    background-color: blue;
+}
+
+.colorless:hover {
+    background-color: gray;
+}
+
+.multi:hover {
+    background-color: goldenrod;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+    height: 100px;
+    gap: 100px;
+    margin: 100px;
+    position: relative
+}
+
+.card img {
+    height: 400px;
+}
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+button {
+    border: solid, black, 1px;
+    border-radius: 3px;
+}
+
+i {
+    padding: 10px;
 }

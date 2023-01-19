@@ -1,4 +1,7 @@
-alert('Bienvenido al simulador de carrito de compra')
+let date = new Date().toLocaleDateString()
+let time = new Date().toTimeString()
+
+alert('Bienvenido al simulador de carrito de compra. \n \nFecha: ' + date + '\nHora: ' + time)
 alert('Dependiendo si eres una persona o una empresa, el IVA será diferente.')
 let type = parseInt(prompt('Ingrese la opción correspondiente: \n \n 1- Persona (IVA 14%). \n 2- Empresa (IVA 16%). \n 3- Salir del programa '))
 
@@ -46,7 +49,7 @@ function productList() {
         newProduct = prompt('¿Desea agregar otro producto?\n\n- Si. \n- No. \n')
     }
 
-    const add = ['Si','si']
+    const add = ['Si', 'si']
 
     while (add.includes(newProduct)) {
 
