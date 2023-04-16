@@ -19,7 +19,7 @@ const ItemComponent = (props) => {
         <p>{showShortValue(description, 40)}</p>
         <img width={400} height={300} src={image} alt="" />
         <p>{price}$</p>
-        <button className="btn btn-primary">Agregar</button>
+        <button className="btn btn-success">Agregar</button>
       </div>
     </div>
   );
