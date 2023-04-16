@@ -1,16 +1,16 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import ProductsView from './views/ProductsView'
-import ElectronicView from './views/ElectronicView'
-import JeweleryView from './views/JeweleryView'
-import MenView from './views/MenView'
-import WomenView from './views/WomenView'
-import NavBarComponent from './components/NavBar/NavBarComponent'
-import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ProductsView from "./views/ProductsView";
+import ElectronicView from "./views/ElectronicView";
+import JeweleryView from "./views/JeweleryView";
+import MenView from "./views/MenView";
+import WomenView from "./views/WomenView";
+import NavBarComponent from "./components/NavBar/NavBarComponent";
+import "./App.css";
 
 function App() {
   return (
     <BrowserRouter>
-    <NavBarComponent />
+      <NavBarComponent />
       <Routes>
         <Route path="/" element={<ProductsView />}></Route>
         <Route path="/electronics" element={<ElectronicView />}></Route>
@@ -19,8 +19,7 @@ function App() {
         <Route path="/women's clothing" element={<WomenView />}></Route>
       </Routes>
     </BrowserRouter>
-    
-  )
+  );
 }
 
-export default App
+export default App;

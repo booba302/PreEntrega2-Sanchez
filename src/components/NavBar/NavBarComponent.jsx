@@ -1,8 +1,8 @@
-import React, { Fragment } from "react"
-import { NavLink } from "react-router-dom"
-import CartWidget from "../CartWidget/CartWidgetComponent"
-import ListOptionNavBarComponent from "./ListOptionNavBarComponent"
-import logo from "../../logo.png"
+import React, { Fragment } from "react";
+import { NavLink } from "react-router-dom";
+import CartWidget from "../CartWidget/CartWidgetComponent";
+import ListOptionNavBarComponent from "./ListOptionNavBarComponent";
+import logo from "../../logo.png";
 
 const NavBarComponent = (props) => {
   const categories = [
@@ -10,7 +10,7 @@ const NavBarComponent = (props) => {
     "Jewelery",
     "Men's clothing",
     "Women's clothing",
-  ]
+  ];
 
   return (
     <Fragment>
@@ -24,7 +24,7 @@ const NavBarComponent = (props) => {
         <CartWidget />
       </div>
     </Fragment>
-  )
-}
+  );
+};
 
-export default NavBarComponent
+export default NavBarComponent;
