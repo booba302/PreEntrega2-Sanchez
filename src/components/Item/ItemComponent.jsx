@@ -1,8 +1,9 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const ItemComponent = (props) => {
   const { data } = props;
-  const { image, title, price, description } = data;
+  const { image, title, price, description, id } = data;
 
   const showShortValue = (value = "", lengthMax = 45) => {
     return value.length > lengthMax
@@ -17,7 +18,9 @@ const ItemComponent = (props) => {
       </div>
       <div className="card-body">
         <p>{showShortValue(description, 40)}</p>
-        <img width={400} height={300} src={image} alt="" />
+        <NavLink to={`/products/` + id}>
+          <img width={400} height={300} src={image} alt="" />
+        </NavLink>
         <p>{price}$</p>
         <button className="btn btn-success">Agregar</button>
       </div>
