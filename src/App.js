@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
 import ProductsView from "./views/ProductsView";
 import ElectronicView from "./views/ElectronicView";
 import JeweleryView from "./views/JeweleryView";
 import MenView from "./views/MenView";
 import WomenView from "./views/WomenView";
 import NavBarComponent from "./components/NavBar/NavBarComponent";
-import "./App.css";
 
 function App() {
   return (
