@@ -11,9 +11,11 @@ const ItemComponent = (props) => {
   };
 
   return (
-    <div className="card m-5">
+    <div className="card shadow-sm m-4">
+      <div className="card-header">
+        <h5>{showShortValue(title, 35)}</h5>
+      </div>
       <div className="card-body">
-        <p>{showShortValue(title, 35)}</p>
         <p>{showShortValue(description, 40)}</p>
         <img width={400} height={300} src={image} alt="" />
         <p>{price}$</p>
