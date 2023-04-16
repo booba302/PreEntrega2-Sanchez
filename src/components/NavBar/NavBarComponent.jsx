@@ -1,7 +1,8 @@
 import React, { Fragment } from "react"
-import logo from "../../logo.png"
+import { NavLink } from "react-router-dom"
 import CartWidget from "../CartWidget/CartWidgetComponent"
 import ListOptionNavBarComponent from "./ListOptionNavBarComponent"
+import logo from "../../logo.png"
 
 const NavBarComponent = (props) => {
   const categories = [
@@ -15,7 +16,9 @@ const NavBarComponent = (props) => {
     <Fragment>
       <div className="navbar">
         <div className="logo">
-          <img src={logo} alt="" />
+          <NavLink to="/">
+            <img src={logo} alt="" />
+          </NavLink>
         </div>
         <ListOptionNavBarComponent categories={categories} />
         <CartWidget />
@@ -24,4 +27,4 @@ const NavBarComponent = (props) => {
   )
 }
 
-export default NavBarComponent;
+export default NavBarComponent

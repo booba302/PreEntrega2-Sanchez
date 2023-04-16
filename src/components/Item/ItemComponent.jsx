@@ -1,7 +1,7 @@
-import React from "react";
+import React from "react"
 
 const ItemComponent = (props) => {
-  const { data } = props;
+  const { data } = props
   const { image, title, price, description } = data
 
   const showShortValue = (value = "" , lengthMax = 45) => {
@@ -18,7 +18,7 @@ const ItemComponent = (props) => {
         <button className="btn btn-primary">Agregar</button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ItemComponent;
+export default ItemComponent
