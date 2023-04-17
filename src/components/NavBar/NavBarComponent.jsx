@@ -21,7 +21,7 @@ const NavBarComponent = (props) => {
           </NavLink>
         </div>
         <ListOptionNavBarComponent categories={categories} />
-        <CartWidget data={0}/>
+        <CartWidget data={0} />
       </div>
     </Fragment>
   );

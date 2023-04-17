@@ -1,10 +1,15 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import useFetch from "../utils/useFetch";
 import ItemComponent from "../components/Item/ItemComponent";
 const BASE_URL = "https://fakestoreapi.com/products";
 
 const ProductsView = (props) => {
+  const [count, setCount] = useState(0);
   const [data, load] = useFetch(BASE_URL);
+
+  const addToCar = () => {
+    setCount(count + 1);
+  };
 
   return (
     <Fragment>
@@ -15,7 +20,7 @@ const ProductsView = (props) => {
           data.map((product, index) => {
             return (
               <div key={index}>
-                <ItemComponent data={product} />
+                <ItemComponent data={product} handlerUpdate={addToCar} />
               </div>
             );
           })
