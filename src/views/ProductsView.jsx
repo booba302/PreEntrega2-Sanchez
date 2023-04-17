@@ -1,7 +1,9 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import useFetch from "../utils/useFetch";
 import ItemComponent from "../components/Item/ItemComponent";
 const BASE_URL = "https://fakestoreapi.com/products";
+
+let nro;
 
 const ProductsView = (props) => {
   const [data, load] = useFetch(BASE_URL);
@@ -24,5 +26,7 @@ const ProductsView = (props) => {
     </Fragment>
   );
 };
+
+export { nro };
 
 export default ProductsView;
