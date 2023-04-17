@@ -1,10 +1,12 @@
 import React, { Fragment } from "react";
 import useFetch from "../utils/useFetch";
 import ItemComponent from "../components/Item/ItemComponent";
-const BASE_URL = "https://fakestoreapi.com/products/category/jewelery";
+import { useParams } from "react-router-dom";
+const BASE_URL = "https://fakestoreapi.com/products/category/";
 
-const JeweleryView = (props) => {
-  const [data, load] = useFetch(BASE_URL);
+const CategoryView = (props) => {
+  const { category } = useParams();
+  const [data, load] = useFetch(`${BASE_URL}${category}`);
 
   return (
     <Fragment>
@@ -25,4 +27,4 @@ const JeweleryView = (props) => {
   );
 };
 
-export default JeweleryView;
+export default CategoryView;

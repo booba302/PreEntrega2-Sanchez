@@ -5,7 +5,7 @@ const BASE_URL = "https://fakestoreapi.com/products/";
 
 const DetailsView = (props) => {
   const { id } = useParams();
-  const [data] = useFetch(`${BASE_URL}+${id}`);
+  const [data] = useFetch(`${BASE_URL}${id}`);
   const { title, description, image, price } = data;
 
   return (
