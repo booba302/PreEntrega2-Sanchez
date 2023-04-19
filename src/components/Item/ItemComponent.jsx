@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 
 const ItemComponent = (props) => {
   const { data } = props;
@@ -9,6 +11,17 @@ const ItemComponent = (props) => {
     return value.length > lengthMax
       ? value.substring(0, lengthMax).concat("...")
       : value;
+  };
+
+  const MySwal = withReactContent(Swal);
+
+  const addToCart = () => {    
+
+    MySwal.fire({
+      title: <strong>Producto agregado al carrito</strong>,
+      html: <i>{title}</i>,
+      icon: "success",
+    });
   };
 
   return (
@@ -23,9 +36,7 @@ const ItemComponent = (props) => {
         <p>{showShortValue(description, 40)}</p>
         <img width={400} height={300} src={image} alt="" />
         <p>{price}$</p>
-        <button className="btn btn-success">
-          Agregar
-        </button>
+        <button className="btn btn-success" onClick={addToCart}>Agregar</button>
       </div>
     </div>
   );

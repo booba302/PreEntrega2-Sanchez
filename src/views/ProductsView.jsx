@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import useFetch from "../utils/useFetch";
 import ItemComponent from "../components/Item/ItemComponent";
 const BASE_URL = "https://fakestoreapi.com/products";
